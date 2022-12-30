@@ -21,7 +21,7 @@ export const EXPERIENCE = [
     endDate: "June 2022",
   },
   {
-    companyName: "LG CSR's Shabdamitra Project",
+    companyName: "Space Application Center - ISRO",
     companyDescription: [
       "Shabdamitra is a learning aid project developed by IIT-Bombay and LG India(CSR team)",
       "Developed easy to use and offline android application",
