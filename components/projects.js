@@ -37,11 +37,6 @@ export default function Project() {
             </div>
           );
         })}
-          <div className={"flex flex-col"}>
-              <button  className={"align-middle justify-center hover:underline decoration-2"}>
-                  <a href={"https://github.com/shrey333?tab=repositories"} target="_blank" rel="noreferrer">More projects</a>
-              </button>
-          </div>
       </section>
     </>
   );
