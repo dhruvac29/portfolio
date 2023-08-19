@@ -2,11 +2,10 @@ export const EXPERIENCE = [
   {
     companyName: "Freelance Web Developer",
     companyDescription: [
-      "Worked on import-export-trading website front-end part from wireframe design to the deployment on the server.",
-      "Explored ways to make UI/UX, SEO, accessibility, and performance more promising using HTML, CSS, and Javascript.\n",
-      "Made website more responsive and user friendly",
-      "Managed to alleviate performance issues in the website",
-      "Reduced average loading time from above 2 seconds to below 0.8 seconds",
+      "Transformed the front-end of an import-export-trading website, overseeing its evolution from wireframe design to seamless deployment on the server.",
+      "Leveraged expertise in HTML, CSS, and JavaScript to enhance UI/UX, SEO, and accessibility, resulting in a more engaging and inclusive user experience.\n",
+      "Engineered responsive design elements to optimize usability across devices, fostering user-friendliness. Addressed performance bottlenecks, substantially reducing average loading time from over 2 seconds to an impressive sub-0.8 seconds, enhancing overall site efficiency.",
+      "Successfully delivered a comprehensive solution that harmonized design, functionality, and performance.",
     ],
     companyTechnologies: [
       "React",
