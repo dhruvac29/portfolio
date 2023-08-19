@@ -22,9 +22,10 @@ export const EXPERIENCE = [
   {
     companyName: "Space Application Center - ISRO",
     companyDescription: [
-      "Worked on various Martian Datasets like OpenMARS, EMARS, and ISCA framework.",
-      "Created stereo-graphic charts with Python scripts from several libraries, including numPy, Panda, OpenCV, and PyTorch, and studied the cause of the windstorm on the Polar Vortex.",
-      "Utilized Python and MATLAB as a script development environment in order to visualize the data theoretically and visually.",
+      "Analyzed Martian datasets, including OpenMARS, EMARS, and ISCA framework, to extract insights and contribute to the understanding of Mars’ atmospheric dynamics.",
+      "Developed stereo-graphic charts using Python libraries such as NumPy, Pandas, OpenCV, and PyTorch, aiding in the investigation of windstorm effects on the Polar Vortex.",
+      "Employed Python and MATLAB scripting environments to visualize data both theoretically and visually, enhancing comprehension and enabling effective communication of findings.", 
+      "Demonstrated proficiency in utilizing technologies such as Python, MATLAB, and NetCDF4 for data analysis and visualization.",
     ],
     companyLink: "https://www.sac.gov.in/Vyom/index.jsp",
     companyTechnologies: ["Python", "MATLAB", "NetCDF4"],
