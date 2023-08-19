@@ -9,14 +9,14 @@ export const PROJECTS = [
   {
     projectName: "Bike Showroom and Service Center Management System",
     projectDescription:
-      "Developed a full database of bike showrooms and service centres for every showroom in which we can live track servicing of any bike in the service centre and track buy—sell and stock of the bike as well as manage staff and offers on the festival.",
+      "Developed a full database of bike showrooms and service centers for every showroom in which we can live track servicing of any bike in the service centre and track buy—sell and stock of the bike as well as manage staff and offers on the festival.",
     projectTechnologies: ["SQL server", "HTML", "CSS"],
   },
   {
     projectName: "All in One Compiler",
     projectDescription:
         "Designed a web compiler for university students and faculties with 4+ features, including the first follow, left factoring, left recursion, token generation, and accelerating the learning process.\n Conceptualized 2+ improvements to the compiler based on students’ feedback leveraging Node, Flex, and C.",
-    projectTechnologies: ["Spring Boot", "JSP", "PDF.JS"],
+    projectTechnologies: ["NodeJS", "JavaScript", "jQuery", "Ajax", "Flex", "Yacc", "C" ],
   },
 
 ];
