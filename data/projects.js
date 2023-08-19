@@ -2,7 +2,10 @@ export const PROJECTS = [
   {
     projectName: "Keep In Touch",
     projectDescription:
-        "It is an Android application for Tourist Group with functionalities like create and join group,chatting, location tracking,image sharing etc. In this application we can track each member’s current position, and if they leave the zone set by the leader, both parties are notified, making it easier to find a missing group member. \n Users can create and invite other members to the group, and share photos and videos and they can also chat like other social media.\n",
+        "Spearheaded the development of an innovative Android application using Java, Firebase, and Android Studio, tailored for tourist groups to revolutionize their travel experience. Engineered a comprehensive set of functionalities, including group creation, member invitations, real-time chatting, location tracking, and seamless image-sharing capabilities. Devised an intelligent location tracking feature that enables the real-time monitoring of each group member’s position.",
+        "Implemented a boundary detection system that triggers notifications for both the leader and members if anyone ventures beyond the designated safe zone, aiding in the swift retrieval of lost group members.",
+        "Orchestrated the development of a reliable and timely notification system that kept users informed about group activities, updates, and critical alerts, enhancing the overall app usability and engagement.",
+        "Empowered users to effortlessly establish groups, extend invitations and effortlessly share multimedia content, fostering a dynamic and interactive group environment.\n",
     projectLink: "https://github.com/dhruvac29/KeepInTouch.git",
     projectTechnologies: ["Android Studio", "JAVA", "Google map API", "Firebase"],
   },
