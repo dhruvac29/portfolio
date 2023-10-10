@@ -10,7 +10,7 @@ export default function Contact() {
         <ul className="flex md:justify-start mt-3 text-base sm:text-xl font-semibold">
           <li className="md:ml-1 mr-3 hover:underline">
             <a
-              href="https://www.linkedin.com/in/dhruvil-chodvadiya-6a4434175/"
+              href="https://www.linkedin.com/in/dhruvil-chodvadiya/"
               target="_blank"
               rel="noreferrer"
             >
@@ -37,7 +37,7 @@ export default function Contact() {
           </li>
           <li className="md:ml-1 mr-3 hover:underline">
             <a
-              href="/pdfs/Resume_Dhruvil.pdf"
+              href="/pdfs/Resume_Chodvadiya_Dhruvil.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
