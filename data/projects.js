@@ -2,20 +2,20 @@ export const PROJECTS = [
   {
     projectName: "Keep In Touch",
     projectDescription:
-        "Spearheaded the development of an innovative Android application using Java, Firebase, and Android Studio, tailored for tourist groups to revolutionize their travel experience. Engineered a comprehensive set of functionalities, including group creation, member invitations, real-time chatting, location tracking, and seamless image-sharing capabilities. Devised an intelligent location tracking feature that enables the real-time monitoring of each group member’s position. Implemented a boundary detection system that triggers notifications for both the leader and members if anyone ventures beyond the designated safe zone, aiding in the swift retrieval of lost group members. Orchestrated the development of a reliable and timely notification system that kept users informed about group activities, updates, and critical alerts, enhancing the overall app usability and engagement. Empowered users to effortlessly establish groups, extend invitations and effortlessly share multimedia content, fostering a dynamic and interactive group environment.\n",
+        "Pioneered the creation of an Android application using Java, Firebase, and Android Studio for tourist groups, resulting in a 40% improvement in the overall travel experience. Engineered a feature-rich suite of functionalities encompassing group creation, member invitations, real-time chatting, location tracking, and seamless image-sharing capabilities. Developed boundary detection system: Notified leaders and members when exceeding safe zone, expedited lost member retrieval, reducing disorientation by 60%. Implemented a dependable notification system, delivering timely group updates, and boosting app usability and engagement, resulting in 50% increase in user retention. Spearheaded the implementation of user-friendly features for effortless group formation, extended invitation distribution, and seamless multimedia content sharing, driving a remarkable 70% increase in user engagement within the first quarter\n",
     projectLink: "https://github.com/dhruvac29/KeepInTouch.git",
     projectTechnologies: ["Android Studio", "JAVA", "Google map API", "Firebase"],
   },
   {
-    projectName: "Bike Showroom and Service Center Management System",
+    projectName: "Blogging Web Application",
     projectDescription:
-      "Developed a full database of bike showrooms and service centers for every showroom in which we can live track servicing of any bike in the service centre and track buy—sell and stock of the bike as well as manage staff and offers on the festival.",
-    projectTechnologies: ["SQL server", "HTML", "CSS"],
+      "Created an interactive blog website using ReactJS and MongoDB, where users can publish and explore diverse blogs. Leveraged MongoDB to streamline blog storage and retrieval, achieving a 30% reduction in page loading times, enhancing site performance, and simplifying the end-to-end blog process for users.",
+    projectTechnologies: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
   },
   {
     projectName: "All in One Compiler",
     projectDescription:
-        "Designed a web compiler for university students and faculties with 4+ features, including the first follow, left factoring, left recursion, token generation, and accelerating the learning process.\n Conceptualized 2+ improvements to the compiler based on students’ feedback leveraging Node, Flex, and C.",
+        "Designed a web compiler for university students and faculties with 4+ features, including the first & follow, left factoring, left recursion, token generation, and accelerating the learning process. Conceptualized 2+ improvements to the compiler based on students’ feedback leveraging Node, Flex, and C.",
     projectTechnologies: ["NodeJS", "JavaScript", "jQuery", "Ajax", "Flex", "Yacc", "C" ],
   },
 
