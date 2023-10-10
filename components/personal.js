@@ -11,7 +11,7 @@ export default function Personal() {
             <span className="underline text-bold decoration-gray-900 dark:decoration-gray-300">
               Dhruvil Chodvadiya
             </span>
-            , a full-stack developer based in Gujarat, India. Welcome to my
+            , a full-stack developer based in Arlington, Texas, United States of America. Welcome to my
             site! I&apos;m glad that you are here.
           </h3>
         </div>
