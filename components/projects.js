@@ -1,43 +1,86 @@
+import { motion } from "framer-motion";
 import { PROJECTS } from "../data/projects";
 
 export default function Project() {
   return (
-    <>
-      <section id="projects" className="my-20">
-        <div className="text-left">
-          <h2 className="text-3xl md:text-4xl font-bold animate-move-bg bg-gradient-to-r from-purple-500 via-red-500 to-purple-500 bg-[length:400%] bg-clip-text text-transparent">
-            Projects
-          </h2>
-        </div>
-        {PROJECTS.map((item, index) => {
-          return (
-            <div
-              key={item}
-              className="hover:shadow-lg focus:shadow-lg mb-5 flex flex-col border border-gray-400 hover:ring-gray-600 hover:ring dark:border-gray-600 dark:hover:ring-gray-300 dark:hover:ring rounded-lg mt-5"
+    <section id="projects" className="py-20">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-12">
+          Projects
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {PROJECTS.map((item, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              key={index}
+              className="group relative"
             >
-              <a href={item.projectLink} target="_blank" rel="noreferrer">
-                <div className="p-4 focus:bg-gray-100 dark:focus:bg-gray-900">
-                  <h3 className="mb-2 text-xl font-semibold tracking-normal dark:text-gray-100">
+              <a
+                href={item.projectLink}
+                target="_blank"
+                rel="noreferrer"
+                className="block"
+              >
+                <div className="h-full p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group-hover:border-purple-500 dark:group-hover:border-purple-400">
+                  {/* Project Icon/Logo */}
+                  <div className="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                     {item.projectName}
                   </h3>
-                  <p className="text-sm md:text-base font-normal text-gray-900 dark:text-gray-300">
+
+                  <p className="mt-3 text-gray-600 dark:text-gray-300 line-clamp-3">
                     {item.projectDescription}
                   </p>
-                  <ul className="flex md:justify-start text-xs md:text-sm mt-3 font-semibold">
-                    {item.projectTechnologies.map((tech, index) => {
-                      return (
-                        <li key={tech} className="md:ml-1 mr-3">
-                          <i>{tech}</i>
-                        </li>
-                      );
-                    })}
-                  </ul>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {item.projectTechnologies.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="px-3 py-1 text-sm font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* View Project Link */}
+                  <div className="mt-6 flex items-center text-purple-600 dark:text-purple-400 font-medium">
+                    <span className="mr-2">View Project</span>
+                    <svg
+                      className="w-4 h-4 transform group-hover:translate-x-2 transition-transform"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </a>
-            </div>
-          );
-        })}
-      </section>
-    </>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }
