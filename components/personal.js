@@ -8,8 +8,8 @@ export default function Personal() {
     >
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-32 w-96 h-96 rounded-full bg-purple-100 dark:bg-purple-900/20 blur-3xl opacity-50"></div>
-        <div className="absolute -bottom-40 -left-32 w-96 h-96 rounded-full bg-pink-100 dark:bg-pink-900/20 blur-3xl opacity-50"></div>
+        <div className="absolute -top-40 -right-32 w-96 h-96 rounded-full bg-purple-100/50 dark:bg-purple-900/20"></div>
+        <div className="absolute -bottom-40 -left-32 w-96 h-96 rounded-full bg-pink-100/50 dark:bg-pink-900/20"></div>
       </div>
 
       <motion.div
@@ -24,7 +24,7 @@ export default function Personal() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-7xl sm:text-8xl md:text-9xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent pb-4">
+            <h2 className="text-7xl sm:text-8xl md:text-9xl font-bold text-purple-600 dark:text-purple-400">
               Hello!
             </h2>
           </motion.div>
@@ -41,7 +41,7 @@ export default function Personal() {
                 <span className="relative z-10 text-gray-900 dark:text-white">
                   Dhruvil Chodvadiya
                 </span>
-                <span className="absolute bottom-0 left-0 w-full h-3 bg-purple-200 dark:bg-purple-900 transform -skew-x-12 -z-10"></span>
+                <span className="absolute bottom-0 left-0 w-full h-3 bg-purple-200 dark:bg-purple-900/50 transform -skew-x-12"></span>
               </span>
               , a full-stack developer based in{" "}
               <span className="font-semibold text-gray-900 dark:text-white">
@@ -49,26 +49,40 @@ export default function Personal() {
               </span>
               .
             </h3>
+          </motion.div>
 
-            <p className="mt-4 text-lg sm:text-xl text-gray-600 dark:text-gray-400">
-              Welcome to my digital space! I craft beautiful and functional web
-              experiences.
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="mt-8 flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
+          >
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white rounded-lg font-medium transition-colors"
+            >
+              View GitHub
+            </a>
+            <a
+              href="/contact"
+              className="px-8 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-colors"
+            >
+              Contact Me
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="mt-12 text-lg text-gray-600 dark:text-gray-400"
+          >
+            <p>
+              I specialize in building modern web applications using React, Next.js, and Node.js.
+              Passionate about creating clean, efficient, and user-friendly solutions.
             </p>
-
-            <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-200 font-medium"
-              >
-                Get in Touch
-              </a>
-              <a
-                href="#projects"
-                className="px-6 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors duration-200 font-medium"
-              >
-                View Projects
-              </a>
-            </div>
           </motion.div>
         </div>
       </motion.div>
