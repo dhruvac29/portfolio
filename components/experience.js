@@ -3,17 +3,52 @@ import { FaBriefcase, FaCode, FaRocket } from "react-icons/fa";
 
 const experiences = [
   {
-    title: "Freelance Software Engineer",
-    company: "Self-Employed",
-    duration: "May 2022 - September 2022",
+    title: "Research Assistant",
+    company: "University of Texas at Arlington",
+    duration: "Jun 2024 - Present",
     icon: FaCode,
     description: [
-      "Transformed front end of an import-export-trading website, from wire-frame design to seamless server deployment, with 2+ million monthly traffic.",
-      "Engineered responsive design elements to optimize usability across devices, fostering user-friendliness.",
-      "Reduced average loading time of 8K-row data sets by 50% through code and architecture optimizations, improving user experience and system performance.",
-      "Successfully delivered a comprehensive solution that harmonized design, functionality, and performance."
+      "Developed and deployed two ML-based web platforms: ",
+      <span key="platforms">
+        <a href="https://cohortnetwork.org" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 dark:text-purple-400 dark:hover:text-purple-300">
+          Cohort Network
+        </a>
+        {" for federated learning research and "}
+        <a href="https://ecotoxicity.org" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 dark:text-purple-400 dark:hover:text-purple-300">
+          Ecotoxicity
+        </a>
+        {" for environmental toxicity predictions."}
+      </span>,
+      "Architected and implemented Ecotoxicity platform using AWS services (Lambda, API Gateway, S3) and Amazon CDK for Infrastructure as Code, ensuring scalable and cost-effective deployment.",
+      "Implemented cancer prediction system using Neural Networks and Autoencoders, achieving 35% improved detection accuracy and submitting findings for publication.",
+      "Currently leading research on Fish Chemical Tissues detection using ML algorithms, focusing on automated chemical compound identification and classification."
     ],
-    technologies: ["React", "MongoDB", "NodeJS", "HTML", "CSS", "JavaScript"]
+    technologies: ["Python", "Machine Learning", "Neural Networks", "AWS Lambda", "API Gateway", "S3", "Amazon CDK", "Web Development"]
+  },
+  {
+    title: "Software Engineer 2",
+    company: "Hornbook Technologies PVT. LTD.",
+    duration: "May 2024 - Aug 2024",
+    icon: FaCode,
+    description: [
+      "Led development of microservices architecture using Node.js and React, improving system scalability by 40% through implementation of event-driven communication and Redis caching.",
+      "Mentored 2 junior developers in React best practices and microservices patterns, conducting weekly code reviews and pair programming sessions that improved team code quality metrics by 25%.",
+      "Architected AWS cloud infrastructure using ECS, CloudFormation, and CI/CD pipelines, resulting in 30% reduction in deployment time and improved system reliability with 99.9% uptime."
+    ],
+    technologies: ["Node.js", "React", "AWS ECS", "Redis", "CloudFormation", "Microservices", "CI/CD"]
+  },
+  {
+    title: "Software Engineer",
+    company: "Hornbook Technologies PVT. LTD.",
+    duration: "May 2022 - April 2024",
+    icon: FaCode,
+    description: [
+      "Developed and maintained a real-time inventory management system using React, Node.js, and MongoDB, implementing WebSocket for live updates and Redux for state management, serving 50K+ daily active users.",
+      "Optimized MongoDB query performance by implementing compound indexes and aggregation pipelines, reducing average query response time from 800ms to 200ms and improving overall application performance by 35%.",
+      "Designed and implemented a distributed caching system using Redis and implemented rate limiting, reducing database load by 40% and improving API response times by 60% during peak traffic.",
+      "Built a custom analytics dashboard using Chart.js and Material-UI, providing real-time insights into user behavior and system performance, leading to data-driven improvements in user experience."
+    ],
+    technologies: ["React", "Node.js", "MongoDB", "Redis", "WebSocket", "Redux", "Material-UI", "Chart.js"]
   },
   {
     title: "Research Intern",
@@ -22,11 +57,23 @@ const experiences = [
     icon: FaRocket,
     description: [
       "Analyzed Martian dataset, including OpenMARS, EMARS, and ISCA framework, to extract insights and enhance understanding of Mars' atmospheric circulation, resulting in a 20% improvement in the accuracy of atmospheric models.",
-      "Developed stereo-graphic charts using Python libraries such as NumPy, Pandas, OpenCV, and PyTorch, contributing to a 30% increase in efficiency in investigating windstorm effects on the Polar Vortex.",
-      "Employed Python and MATLAB scripting environments to visualize data both theoretically and visually, enhancing comprehension and enabling effective communication of findings.",
+      "Utilized Python libraries (NumPy, Pandas, OpenCV, PyTorch) to develop stereo-graphic charts, increasing efficiency in windstorm effect investigations by 30%.",
       "Demonstrated proficiency in harnessing cutting-edge technologies such as Python, MATLAB, and NetCDF4 for data analysis and visualization, resulting in a 15% reduction in data processing time while improving the quality of insights generated."
     ],
-    technologies: ["Python", "MATLAB", "NetCDF4"]
+    technologies: ["Python", "MATLAB", "NetCDF4", "NumPy", "Pandas", "OpenCV", "PyTorch"]
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Hornbook Technologies PVT. LTD.",
+    duration: "Jan 2021 - Jun 2021",
+    icon: FaCode,
+    description: [
+      "Developed a sentiment analysis model using BERT and PyTorch for customer feedback classification, achieving 89% accuracy and reducing manual review time by 65% for the customer support team.",
+      "Implemented data preprocessing pipeline using Pandas and NumPy for handling 100K+ customer reviews, including text cleaning, tokenization, and feature engineering, improving model training efficiency by 40%.",
+      "Built RESTful APIs using FastAPI to serve ML models in production, implementing model versioning and A/B testing framework, handling 500+ predictions per minute with 200ms average response time.",
+      "Created an automated ML pipeline using MLflow for experiment tracking and model registry, enabling efficient model iteration and deployment, reducing model deployment time from 2 days to 4 hours."
+    ],
+    technologies: ["Python", "PyTorch", "BERT", "FastAPI", "MLflow", "Pandas", "NumPy", "Docker"]
   }
 ];
 
